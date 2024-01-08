@@ -1,24 +1,34 @@
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 1060px;
+}
+.header-container > .image-container > img {
+  height:  36px;
   
 }
-.header-container > img {
-  height:  36px;
-  margin-right: 100px;
-}
-.header-container > button {
+.header-container > .buttons-container > button {
   font-family: Avenir, "lucida grande", tahoma, verdana, arial, sans-serif;
+  font-weight: 700;
   padding: 4px 8px;
   font-size: 14px;
   cursor: pointer;
   border: none;
-  color: rgb(224, 224, 224);
-  
+  width: 106px;
+  margin-left: 7px;
+  border-radius: 3px;
+}
+.hide-ads-button {
+  color:  rgb(171, 196, 237);
+  background-color:  rgba(0, 0, 0, 0);
+  margin-right: 10px;
 }
 .login-button {
+  color: white;
   background-color: rgb(65, 65, 65);
 }
 .signup-button {
+  color: white;
   background-color: rgb(64, 101, 186);
 }
