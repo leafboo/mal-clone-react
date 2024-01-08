@@ -1,0 +1,68 @@
+.search-container {
+  margin-top: 10px;
+  display: flex;
+  width: 1060px;
+  background-color: #2e51a2;
+  height: 34px;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+li {
+  display: inline-block;
+  height: 27px;
+  padding-top: 7px;
+  padding-right: 8px;
+}
+li:hover {
+  background-color: rgb(51, 51, 51);
+}
+.search-container > .left-bar > ul > li  > a{
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Arial;
+  font-size: 13px;
+  font-weight: 700;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.right-bar {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.right-bar > select {
+  background-color:  rgb(18, 18, 18);
+  border-color: rgb(53, 53, 53);
+  color: rgb(224, 224, 224);
+  height: 23px;
+  font-size: 11px;
+  width: 90px;
+}
+
+.right-bar > input {
+  background-color: rgb(18, 18, 18);
+  border: none;
+  color: rgb(224, 224, 224);
+  height: 21px;
+  width: 285px;
+  font-size: 11px;
+  margin-left: 3px;
+  padding-left: 8px;
+}
+.right-bar > .search-button {
+  background-color: rgb(53, 53, 53);
+  border: none;
+  height: 23px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.right-bar > .search-button > img {
+  height: 16px;
+  object-fit: contain;
+}
