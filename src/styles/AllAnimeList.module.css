@@ -1,5 +1,5 @@
 .all-anime-list-container {
-  width: 1060px;
+  width: 1033px;
   margin-left: 12px;
 }
 
@@ -24,9 +24,9 @@
   text-decoration: underline;
 }
 
-button {
+.next-button {
   position: absolute;
-  right: 30px;
+  right: 0;
   background-color: rgb(79, 116, 200);
   color: rgb(224, 224, 224);
   border: none;
@@ -37,7 +37,7 @@ button {
 
 table {
   margin-top: 4px;
-  width: 1033px;
+  width: 1035px;
 }
 table > thead > tr > td {
   background-color: rgb(51, 51, 51);

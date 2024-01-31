@@ -9,7 +9,7 @@ export default function AllAnimeList() {
           Top Anime Series
           <span className={AllAnimeListCSS['small-text']}>Updated twice a day. (<a href="" className={AllAnimeListCSS.blue}>How do we rank shows?</a>)
           </span>
-          <button>Next 50 &gt;</button>
+          <button className={AllAnimeListCSS['next-button']}>Next 50 &gt;</button>
           
         </div >
         <table>

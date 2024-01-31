@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
   width: 1060px;
 }
 .header-container > .image-container > img {
@@ -27,6 +28,7 @@
 .login-button {
   color: white;
   background-color: rgb(65, 65, 65);
+    margin-right: 10px;
 }
 .signup-button {
   color: white;
