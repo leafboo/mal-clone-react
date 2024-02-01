@@ -1,15 +1,5 @@
-{
-  "pagination":{
-     "last_visible_page":1062,
-     "has_next_page":true,
-     "current_page":1,
-     "items":{
-        "count":25,
-        "total":26545,
-        "per_page":25
-     }
-  },
-  "data":[
+
+  export default[
      {
         "mal_id":52991,
         "url":"https:\/\/myanimelist.net\/anime\/52991\/Sousou_no_Frieren",
@@ -4826,4 +4816,3 @@
         ]
      }
   ]
-}

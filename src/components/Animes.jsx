@@ -7,8 +7,10 @@ export default function Animes(props) {
         <td>{props.rank}</td>
         <td>{props.title}</td>
         <td>{props.score}</td>
-        <td>{props.yourScore}</td>
-        <td>{props.status}</td>
+        <td>N/A</td>
+        <td>
+          <button>Add to My List</button>
+          </td>
       </tr>
     </div>
   )

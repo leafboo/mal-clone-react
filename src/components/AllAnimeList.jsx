@@ -1,8 +1,16 @@
 import React from 'react'
 import AllAnimeListCSS from '../styles/AllAnimeList.module.css'
 import Animes from './Animes.jsx'
+import topAnimeData from '../data/topAnimeData.js'
 
 export default function AllAnimeList() {
+
+  const AnimeElement = topAnimeData.map(anime => 
+    <Animes rank={anime.rank} 
+            title={anime.title}
+            score={anime.score}/>
+  )
+
   return (
     <div>
       <div className={AllAnimeListCSS['all-anime-list-container']}>
@@ -24,22 +32,7 @@ export default function AllAnimeList() {
             </tr>
           </thead>
           <tbody>
-
-            <Animes 
-              rank = '1'
-              title = 'frieren'
-              score = '10'
-              yourScore = '10'
-              status = 'ongoing'
-            />
-
-            <Animes 
-               rank = '2'
-               title = 'full metal alchemist'
-               score = '9.5'
-               yourScore = '5'
-               status = 'finished'
-            />
+            {AnimeElement}
           </tbody>
         </table>
       </div>
