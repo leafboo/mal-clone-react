@@ -1,5 +1,6 @@
 import React from 'react'
 import AllAnimeListCSS from '../styles/AllAnimeList.module.css'
+import Animes from './Animes.jsx'
 
 export default function AllAnimeList() {
   return (
@@ -23,9 +24,22 @@ export default function AllAnimeList() {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>frieren</td>
-            </tr>
+
+            <Animes 
+              rank = '1'
+              title = 'frieren'
+              score = '10'
+              yourScore = '10'
+              status = 'ongoing'
+            />
+
+            <Animes 
+               rank = '2'
+               title = 'full metal alchemist'
+               score = '9.5'
+               yourScore = '5'
+               status = 'finished'
+            />
           </tbody>
         </table>
       </div>
