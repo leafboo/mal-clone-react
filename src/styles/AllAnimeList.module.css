@@ -38,12 +38,37 @@
 table {
   margin-top: 4px;
   width: 1035px;
+  border-collapse: collapse;
 }
 table > thead > tr > td {
-  background-color: rgb(51, 51, 51);
+  background-color: #333;
   text-align: center;
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
   color: rgb(224, 224, 224);
+  border: #333 0 solid;
+  line-height: 18px;
 }
+.rank {
+  border-left: #333 1px solid;
+  border-right: #121212 1px solid;
+  width: 74px;
+}
+.title {
+  border-right: #121212 1px solid;
+  width: 644px;
+}
+.score {
+  border-right: #121212 1px solid;
+  width: 96px;
+}
+.your-score {
+  border-right: #121212 1px solid;
+  width: 96px;
+}
+.status {
+  border-right: #333 1px solid;
+  width: 122px;
+}
+

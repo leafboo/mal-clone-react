@@ -8,8 +8,15 @@ export default function AllAnimeList() {
   const AnimeElement = topAnimeData.map(anime => 
     <Animes rank={anime.rank} 
             title={anime.title}
-            score={anime.score}/>
+            score={anime.score}
+            image={anime.images.jpg.image_url}
+            url={anime.url}
+            type={anime.type}
+            episodes={`TV (${anime.episodes} eps)`}
+            aired={anime.aired.string.replace(" to ", " - ")}
+            members={anime.members}/>
   )
+  
 
   return (
     <div>
@@ -24,11 +31,11 @@ export default function AllAnimeList() {
         <table>
           <thead>
             <tr>
-              <td>Rank</td>
-              <td>Title</td>
-              <td>Score</td>
-              <td>Your Score</td>
-              <td>Status</td>
+              <td className={AllAnimeListCSS['rank']}>Rank</td>
+              <td className={AllAnimeListCSS['title']}>Title</td>
+              <td className={AllAnimeListCSS['score']}>Score</td>
+              <td className={AllAnimeListCSS['your-score']}>Your Score</td>
+              <td className={AllAnimeListCSS['status']}>Status</td>
             </tr>
           </thead>
           <tbody>
