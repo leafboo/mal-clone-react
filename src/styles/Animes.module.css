@@ -41,7 +41,7 @@ tr:nth-child(even) td{
 .anime-description {
   font-size: 11px;
   color: rgb(102, 102, 102);
-  line-height: 14px;
+  line-height: 17px;
 }
 .anime-title > div {
   display: inline-block;

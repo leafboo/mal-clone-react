@@ -11,10 +11,9 @@ export default function AllAnimeList() {
             score={anime.score}
             image={anime.images.jpg.image_url}
             url={anime.url}
-            type={anime.type}
-            episodes={`TV (${anime.episodes} eps)`}
+            episodes={`${anime.type} (${anime.episodes} eps)`}
             aired={anime.aired.string.replace(" to ", " - ")}
-            members={anime.members}/>
+            members={`${anime.members.toLocaleString()} members`}/>
   )
   
 

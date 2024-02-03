@@ -12,7 +12,6 @@ export default function Animes(props) {
         <div>
           <div className={AnimesCSS['anime-title-blue']}><a href={props.url}>{props.title}</a></div>
           <div className={AnimesCSS['anime-description']}>
-            {props.type}<br />
             {props.episodes}<br />
             {props.aired} <br />
             {props.members}
