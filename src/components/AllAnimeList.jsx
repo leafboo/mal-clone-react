@@ -1,11 +1,24 @@
 import React from 'react'
 import AllAnimeListCSS from '../styles/AllAnimeList.module.css'
 import Animes from './Animes.jsx'
-import topAnimeData from '../data/topAnimeData.js'
 
 export default function AllAnimeList() {
 
-  const AnimeElement = topAnimeData.map(anime => 
+
+  const [animeData, setAnimeData] = React.useState([])
+  
+  React.useEffect(
+    async function getAnimeData() {
+      const response = await fetch("https://api.jikan.moe/v4/top/anime")
+      const data = await response.json()
+      setAnimeData(data.data)
+
+    }, []
+  )
+  
+
+  
+  const AnimeElement = animeData.map(anime => 
     <Animes rank={anime.rank} 
             title={anime.title}
             score={anime.score}
