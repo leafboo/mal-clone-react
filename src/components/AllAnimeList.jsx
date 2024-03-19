@@ -7,14 +7,14 @@ export default function AllAnimeList() {
 
   const [animeData, setAnimeData] = React.useState([])
   
-  React.useEffect(
+  React.useEffect(() => {
     async function getAnimeData() {
       const response = await fetch("https://api.jikan.moe/v4/top/anime")
       const data = await response.json()
       setAnimeData(data.data)
-
-    }, []
-  )
+    }
+    getAnimeData()
+  }, [])
   
 
   
